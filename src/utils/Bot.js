@@ -41,17 +41,19 @@ class Bot {
 
       dataFile = dataFile.data.result
 
-      // Baixa o arquivo
-      let file = await axios.get(
-        `https://api.telegram.org/file/bot${this.token}/${dataFile.file_path}`,
-        { responseType: 'arraybuffer' }
-      )
-
       // TODO: testar pdf criptografado
       if (type == 'application/pdf') {
+        let file = await axios.get(
+          `https://api.telegram.org/file/bot${this.token}/${dataFile.file_path}`,
+          { responseType: 'arraybuffer' }
+        )
         return { message: Buffer.from(file.data), isFile: true, type, fileName }
       }
 
+      // Baixa o arquivo
+      let file = await axios.get(
+        `https://api.telegram.org/file/bot${this.token}/${dataFile.file_path}`
+      )
       return { message: file.data, isFile: true, type, fileName }
     } catch (error) {
       console.error(error)
