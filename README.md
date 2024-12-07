@@ -26,7 +26,7 @@ npm run start
 - `PORT` - Porta da aplicação.
 - `TOKEN` - Token do bot da api do Telegram.
 - `PASSPHRASE` - Senha da chave privada.
-- `PRIV_KEY_USER` - Nome da chave privada do usuário.
+- `PRIV_KEY_USER` - Caminho do chave privada do usuário.
 
 Chaves geradss ao criar um certificado SSL e são usados para habilitar o HTTPS de um site.
 Foi utilizada para o webhook, necessário para receber mensagens em tempo real enviadas para o bot.
