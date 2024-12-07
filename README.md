@@ -1,6 +1,6 @@
 # Bobot
 
-Bot do telegram utilizado para descriptografar mensagens utilizando a biblioteca ([OpenPGP](https://www.npmjs.com/package/openpgp).
+Bot do telegram utilizado para descriptografar mensagens utilizando a biblioteca ([OpenPGP])(https://www.npmjs.com/package/openpgp).
 
 _Bot_ - @NyyyyxBot
 
