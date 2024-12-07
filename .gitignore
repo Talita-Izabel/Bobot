@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+priv-talita.pem
+
+*.lock
+
+*.env
+!*.env.example
+*.pem
